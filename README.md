@@ -1,42 +1,34 @@
-## Getting Started
+# 🏡 Million Properties - Frontend
 
-First, install dependencies:
+Aplicación web desarrollada con **Next.js** para visualizar y gestionar propiedades inmobiliarias. Este frontend consume la API del backend `Million Properties` y utiliza **Chakra UI** para los componentes de la interfaz de usuario y **React Query** para el manejo del estado del servidor.
+
+---
+
+## 📝 Requisitos
+
+* **Node.js** (versión 18 o superior)
+* **npm** o **yarn**
+* Un servidor de la API del backend de `Million Properties` corriendo.
+
+Antes de ejecutar el proyecto, asegúrate de que el backend esté corriendo y de que la URL de la API esté configurada correctamente en el archivo de variables de entorno.
+
+---
+
+## ⚡ Instalación y ejecución
 
 ```bash
+# Instalar dependencias
 npm install
-# or
+# o
 yarn install
-# or
-pnpm install
-# or
-bun install
-```
 
-Second, run the development server:
+# Copiar el archivo de variables de entorno de ejemplo
+cp .env.local.example .env.local
 
-```bash
+# Abrir el archivo .env.local y configurar la URL del backend
+# Ejemplo: NEXT_PUBLIC_API_URL=http://localhost:5000/api
+
+# Ejecutar la aplicación en modo de desarrollo
 npm run dev
-# or
+# o
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Environments (.env)
-```code
-NUXT_PUBLIC_API_URL=http://localhost:5114/api
-```
-
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
